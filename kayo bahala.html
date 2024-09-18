@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		
+		p {
+			color: blue;
+		}
+		
+		* {
+			color: blue;
+		}
+		
+		#cyan {
+			color: cyan;
+		}
+		
+		.center {
+			text-align: center;
+		}
+		
+		span, p {
+			color: red;
+		}
+		
+		div p {
+			color:pink;
+		}
+		
+		div.green p {
+			color: green;
+		}
+		
+		div .green p, div .violet p {
+			color: green;
+		}
+		
+		div > p {
+			color: violet;
+		}
+		
+		.orange > p {
+			color: orange;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<p id="cyan" class="center">This is a paragraph.</p>
+		<p class="center">This is another paragraph.</p>
+		<span>This is a span.</span>
+		
+		<br>
+		
+		<div>
+			<p>I am inside a div.</p>
+			<span>I am also inside a div!</span>
+		</div>
+		
+		<br>
+		
+		<div class="green">
+			<p>I am inside a div.</p>
+		</div>
+		<div>
+			<p>I am also inside a div.</p>
+		</div>
+		
+		<br>
+		
+		<div>
+			<p>I am also inside a div.</p>
+			
+			<span class="green">
+				<p>I am technically inside a div.</p>
+			</span>
+			<div class="green">
+				<p>I am inside a div.</p>
+			</div>
+			<div>
+				<p>I don't have class.</p>
+			</div>
+		</div>
+		
+		<br>
+		
+		<div>
+			<p>I am also inside a div.</p>
+			
+			<span class="violet">
+				<p>I am technically inside a div.</p>
+			</span>
+			<div class="violet">
+				<p>I am inside a div.</p>
+			</div>
+			<div>
+				<p>I don't have class.</p>
+			</div>
+		</div>
+		
+		<br>
+		
+		<div>
+			<p> I am inside a div. </p>
+			<span>
+				<p>I am technically inside a div.</p>
+			</span>
+		</div>
+		
+		<br>
+		
+		<div>
+			<p> Am I orange?</p>
+			<span>
+				<p>I am technically inside a div.</p>
+			</span>
+		</div>
+	</body>
+</html>
